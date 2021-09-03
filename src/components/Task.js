@@ -1,4 +1,4 @@
-import PropTypes from 'prop-types';
+import PropTypes from "prop-types";
 import React from "react";
 
 export default function Task({
@@ -23,7 +23,7 @@ export default function Task({
           value={title}
           readOnly={true}
           placeholder="Input title"
-          style={{ background: 'red' }}
+          style={{ textOverflow: "ellipsis" }}
         />
       </div>
 
@@ -47,7 +47,7 @@ Task.propTypes = {
     /** Title of the task */
     title: PropTypes.string.isRequired,
     /** Current state of the task */
-    state: PropTypes.string.isRequired
+    state: PropTypes.string.isRequired,
   }),
   /** Event to change the task to archived */
   onArchiveTask: PropTypes.func,
